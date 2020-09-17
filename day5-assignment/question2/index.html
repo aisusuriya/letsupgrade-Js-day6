@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="addBus(event)">
+        <input type="text" placeholder="Name"  id="name" required ><br><br>
+        <input type="text" placeholder="Source" id="source" required><br><br>
+        <input type="text" placeholder="Destination" id="destination" required><br><br>
+        <input type="number" placeholder="Number" id="number" required><br><br>
+        <input type="number" placeholder="Passenger Capacity" id="capacity" required><br><br>
+        <button>Add Bus</button><br><br>
+    </form>
+    <div>
+        <input type="text" placeholder="Search Source" id="searchSource" onkeyup="searchBySource()"><br><br>
+        <input type="text" placeholder="Search Destination" id="searchDestination" onkeyup="searchByDest()"><br><br>
+    </div>
+    <table border="1" cellspacing="0">
+        <thead>
+            <tr>
+            <th>Sr no</th>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Number</th>
+            <th>Passenger Capacity</th>
+        </tr>
+        </thead>
+        <tbody class="getData">
+            
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
